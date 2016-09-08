@@ -1,0 +1,26 @@
+{
+  "name": "innlevering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/app.js",
+  "scripts": {
+    "install": "npm run install:app & npm run install:server",
+    "install:app": "cd app && npm install",
+    "install:server": "cd server && npm install",
+    "build": "cd app && npm run build",
+    "start": "cd app && npm run start"
+  },
+  "author": "Nikolai Larsen",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "mocha": "^2.5.3",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "redux": "^3.5.2"
+  }
+}
